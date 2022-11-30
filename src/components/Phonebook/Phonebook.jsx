@@ -14,13 +14,11 @@ export default function Phonebook () {
 localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts])
  const onChangeFilter = e => {
-    setFilter(e.target.value);
-   
-  };
+   setFilter(e.target.value);
+ };
 
   const onAddContact = ({ name, number, id }) => {
-    
-    if (
+        if (
       contacts.find(
         contact => contact.name.toLowerCase() === name.toLowerCase()
       )
