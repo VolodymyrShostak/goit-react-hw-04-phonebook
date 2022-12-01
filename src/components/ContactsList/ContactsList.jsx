@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Button, Contact, ContactList } from './ContactList.styled.js';
 
 const ContactsList = ({ filter, contacts, onDeleteContact }) => {
+ 
   const normalizedFilter = filter.toLowerCase();
 
   const visibleContacts = contacts.filter(contact =>
